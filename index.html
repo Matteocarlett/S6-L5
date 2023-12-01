@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>S6-L5 lavoro settimanale</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand" href="#"><img id="logo" src="./assets/netflix_logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon color-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light" href="#" role="button" aria-expanded="false">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" role="button" aria-expanded="false">
+                                Tv Shows
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light " href="#" role="button" aria-expanded="false">
+                                Movies
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" role="button" aria-expanded="false">
+                                Recently Added
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" role="button" aria-expanded="false">
+                                My List
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-end">
+
+                        <div class="me-4">
+                            <img class="bianco" src="assets/search.svg" alt="lente">
+                        </div>
+
+                        <div class="me-4">
+                            <img src="assets/kids_icon.png" alt="kid" width="30em">
+                        </div>
+                        <div class="position-relative mt-1 me-4">
+                            <img class="bianco" src="assets/bell-fill.svg" alt="bell" width="130%">
+                        </div>
+                        <div class="me-1">
+                            <img src="assets/avatar.png" alt="avatar" width="30em">
+                        </div>
+
+                        <div class="dropdown-toggle text-white" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="avatar-dropdown dropdown-menu dropdown-menu-end  " aria-label="User Account">
+                                <div class="d-flex px-3 pb-1">
+                                    <div class="avatar-menu-header">
+                                        <h5 class="font-sm mb-0">Account</h5>
+                                        <p class="font-sm mb-0 text-muted">mac@epicode.it</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="#">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span class="ms-2">Profile</span></a>
+                                <a class="dropdown-item px-3" href="profilo.html">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                    <span class="ms-2">Subscription</span></a>
+                                <a class="dropdown-item px-3" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-settings">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path
+                                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                        </path>
+                                    </svg>
+                                    <span class="ms-2">Settings</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-power">
+                                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                                        <line x1="12" y1="2" x2="12" y2="12"></line>
+                                    </svg>
+                                    <span class="ms-2">Sign Out</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <h1>TV Shows</h1>
+                <div class="dropdown ps-5 d-flex">
+                    <button id="genres"
+                        class="btn btn-primary btn-sm border-light bg-black dropdown-toggle rounded-0 my-2"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Genres
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <img class="bianco border border-light py-1 px-3" src="assets/text-left.svg" alt="left"
+                        width="100%">
+                </div>
+                <div>
+                    <img class="bianco border border-light py-1 px-3" src="assets/grid.svg" alt="grid" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-white mt-4">
+            <h2>Trending Show</h2>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex">
+                            <img src="assets/media/media0.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media1.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media2.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media3.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media4.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media5.webp" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <img src="assets/media/media6.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media7.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media8.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media9.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media10.jpg" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-white mt-4">
+            <h2>Watch It Again</h2>
+            <div id="carouselExample2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex">
+                            <img src="assets/media/media11.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media12.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media13.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media14.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media15.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media16.webp" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <img src="assets/media/media17.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media18.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media19.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media20.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media21.webp" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-white mt-4">
+            <h2>New Releases</h2>
+            <div id="carouselExample3" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex">
+                            <img src="assets/media/media22.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media23.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media24.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media25.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media26.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media27.jpg" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <img src="assets/media/media28.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media29.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media30.jpg" class="d-block w-40" alt="...">
+                            <img src="assets/media/media31.webp" class="d-block w-40" alt="...">
+                            <img src="assets/media/media32.jpg" class="d-block w-40" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="d-flex justify-content-center pt-5">
+        <div>
+            <div class="bianco d-flex">
+                <img src="assets/facebook.svg" alt="fb">
+                <img src="assets/instagram.svg" alt="ig">
+                <img src="assets/twitter.svg" alt="tw">
+                <img src="assets/youtube.svg" alt="yt">
+            </div>
+            <div class="d-flex">
+                <div class="row">
+                    <p>Audio and Subtitles</p>
+                    <p>Media Center</p>
+                    <p>Privacy</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="row">
+                    <p>Audio Description</p>
+                    <p>Investor Relations</p>
+                    <p>Legal Notices</p>
+                </div>
+                <div class="row">
+                    <p>Help Center</p>
+                    <p>Jobs</p>
+                    <p>Coockie Preferences</p>
+                </div>
+                <div class="row">
+                    <p>Gift Cards</p>
+                    <p>Term of Use</p>
+                    <p>Corporate Information</p>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <p class="border border-light d-inline p-1">Service Code</p>
+                <p class="pt-3">&copy;1997-2019 Netflix,Inc.{i-0d00fcda2fdf9c0de}</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

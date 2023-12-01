@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414 !important;
+}
+
+header {
+    margin: 0.5rem 3rem;
+}
+
+#logo {
+    width: 7rem;
+}
+
+.bianco {
+    filter: brightness(0) invert(1);
+}
+
+h1 {
+    color: white !important;
+}
+
+main {
+    margin: 1rem 3.6rem;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+main img {
+    padding: 0.2rem;
+}
+
+footer {
+    margin: 3.3rem;
+    padding: 0 15rem;
+}
+
+footer p {
+
+    font-size: 0.5em;
+    color: white;
+    opacity: 30%;
+    padding-bottom: 0.3rem;
+    margin: 0;
+}
+
+footer img {
+    padding-right: 1rem;
+    width: 2.5rem;
+    opacity: 50%;
+    margin-bottom: 1.3rem;
+}

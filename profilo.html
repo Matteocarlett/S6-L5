@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style2.css">
+    <title>S6-L5 lavoro settimanale parte 2</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="assets/netflix_logo.png" alt="logo">
+        </nav>
+    </header>
+    <main class="d-flex justify-content-center">
+        <div id="container" class="d-flex flex-column">
+            <p id="titolo" class="profilo text-light">Edit Profile</p>
+            <div class="d-flex">
+                <div><img id="profilo" src="assets/avatar.png" alt="profile">
+                    <div id="colore">
+                        <img id="penna" src="assets/pencil-fill.svg" alt="penna">
+                    </div>
+                </div>
+                <div>
+                    <div id="strive">
+                        <input class="text-bg-secondary p-1" type="text" value="Strive Student">
+                        <p class=" text-white-50 pt-4 fs-5">Language:</p>
+                    </div>
+
+                    <div class="dropdown">
+                        <a class="btn btn-secondary rounded-0 dropdown-toggle bg-black" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Italiano
+                        </a>
+                        <ul class="dropdown-menu bg-black">
+                            <li><a class="dropdown-item text-light" href="#">French</a></li>
+                            <li><a class="dropdown-item text-light" href="#">English</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Espanol</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Deutch</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="settings" class="mt-3 pt-3">
+                        <p class="text-white-50 fs-5">Maturity Settings:</p>
+                        <button class="text-white p-1 px-2 mb-2">ALL MATURITY RATINGS</button>
+                        <p class="text-white">Show titles of <strong>all maturity ratings</strong> for this profile</p>
+                        <button type="button" class="btn rounded-0 px-4 btn-outline-secondary">EDIT</button>
+                    </div>
+
+                    <p class="text-white-50 fs-5 mt-3 mb-1">Autoplay controls</p>
+                    <div class="boxC form-check d-flex">
+                        <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault"
+                            checked>
+                        <label class="form-check-label text-white-50 ps-3" for="flexCheckDefault">
+                            Autoplay next episode in a series on all devices.
+                        </label>
+                    </div>
+                    <div class="boxC form-check d-flex mb-4">
+                        <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label text-white-50 ps-3" for="flexCheckChecked">
+                            Autoplay previews while browsing on all devices
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="d-flex justify-content-center p-5">
+        <button type="button"
+            class="btn me-3 rounded-0 px-4 btn-outline-secondary text-black bg-light"><strong>SAVE</strong></button>
+        <button type="button" class="btn me-3 rounded-0 px-4 btn-outline-secondary"><strong>CANCEL</strong></button>
+        <button type="button" class="btn me-3 rounded-0 px-4 btn-outline-secondary"><strong>DELETE
+                PROFILE</strong></button>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
